@@ -5,3 +5,36 @@
 html {
   font-size: 62.5%;
 }
+
+@layer base {
+  label {
+    @apply text-md;
+  }
+  input {
+    @apply text-base outline-none border border-gray-400 rounded-md p-8 text-black;
+  }
+  select {
+    @apply text-black text-base outline-none border border-gray-400 rounded-md p-8;
+  }
+
+  h1 {
+    @apply text-[#222] capitalize text-3xl tracking-wider font-normal bg-gradient-to-tr from-[#00ff87] to-[#60efff] text-center animate-bounce rounded-md;
+  }
+
+  h4 {
+    @apply font-bold uppercase text-base;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply uppercase px-12 p-8 rounded-lg;
+  }
+  .btn-yellow {
+    @apply bg-yellow-400 text-black;
+  }
+
+  .btn-orange {
+    @apply bg-orange-600 text-white hover:animate-pulse;
+  }
+}
